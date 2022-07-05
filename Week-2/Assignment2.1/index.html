@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
         <link rel="stylesheet" href="./css/style.css">
+        <meta name="viewport" content="width=device-width">
     </head>
     <h2 style="text-align: center;">
         <!--Title-->
@@ -25,10 +26,29 @@
     <div class="right-article">
         <!--third article-->
         <h3>Gitlab as DevOps</h3>
-        <p>itLab is The DevOps platform that empowers organizations to maximize the overall return on software development by delivering software faster, more efficiently, while strengthening security and compliance</p>
+        <p>GitLab is The DevOps platform that empowers organizations to maximize the overall return on software development by delivering software faster, more efficiently, while strengthening security and compliance</p>
     </div>
     <div>
         <!-- form div-->
+        <form action="Register" method="Post">
+            <table>
+            <tr>
+            <td>
+            <label> First Name </label></td>
+            <td><input type="text" id="firstname" name = "fname" pattern="[a-zA-Z]*" required></td></tr>
+            <tr><td>
+            <label> Last Name </label></td>
+            <td><input type="text" id="lastname" name = "lname" pattern="[a-zA-Z]*" required></td></tr>
+            <tr><td>
+            <label> Email ID </label></td>
+            <td><input type="email" id="email" name = "email"></td></tr>
+            <tr><td>
+            <label> Password </label></td>
+            <td><input type="password" id="password" name = "pwd" min="8" max="20"></td></tr>
+            <tr><td>
+            <button type="submit" class="submit" id="register"> Register </button></td></tr>
+            </table>
+            </form>
     </div>
     <footer>
         <!--footer on my info-->

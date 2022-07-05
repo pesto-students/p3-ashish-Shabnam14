@@ -35,3 +35,10 @@ a {
     width: 600px;
     height: 200px;
 }
+.submit{
+    text-align: center;
+    background-color: cyan;
+}
+.submit:hover{
+    background-color: darkseagreen;
+}
