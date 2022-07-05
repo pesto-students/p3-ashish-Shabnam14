@@ -1,0 +1,24 @@
+.box1{
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    background-color: blue;
+}
+.box2 {
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    background-color: chartreuse;
+}
+.box3 {
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    background-color:deeppink;
+}
+.box4 {
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    background-color:purple; 
+}
