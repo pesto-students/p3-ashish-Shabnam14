@@ -1,9 +1,9 @@
 const createStack = () => {
     items: [];
     return ({
-       push(item) {
-        this.items.push(item);
-        //console.log("push operation");
+        push(item) {
+            this.items.push(item);
+            //console.log("push operation");
         },
         pop() {
             return this.items.pop();
