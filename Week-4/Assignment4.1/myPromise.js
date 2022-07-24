@@ -1,7 +1,7 @@
-function getNumber(resolve, reject){
+function getNumber(resolve, reject) {
     let randomNumber = Math.floor(Math.random() * 100);
     console.log("Random number is " + randomNumber + " ,So");
-    if (randomNumber % 5 == 0){
+    if (randomNumber % 5 == 0) {
         resolve("Promise is resolved");
     } else {
         reject("Promise is rejected");
@@ -11,7 +11,7 @@ class myPromise {
     constructor(handler) {
         this.status = "pending";
         this.value = null;
-      
+
         const resolve = value => {
             if (this.status === "pending") {
                 this.status = "fulfilled";
@@ -24,14 +24,14 @@ class myPromise {
                 this.value = value;
             }
         };
-      
+
         try {
             handler(resolve, reject);
         } catch (err) {
             reject(err);
         }
     }
-  
+
     then(onFulfilled, onRejected) {
         if (this.status === "fulfilled") {
             onFulfilled(this.value);
